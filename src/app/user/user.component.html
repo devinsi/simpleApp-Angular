@@ -1,0 +1,21 @@
+<div class="container">
+    <div class = "card">
+        <h3 class="text-center">Utilisateurs</h3>
+        <div class="card-body">
+            <table class="table table-strtiped">
+                <thead>
+                    <th>Id</th>
+                    <th>nom</th>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{ user.id}}</td>
+                        <td>{{ user.name}}</td>
+                        <td>{{ user.email}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
